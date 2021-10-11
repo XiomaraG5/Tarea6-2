@@ -1,0 +1,52 @@
+.contenedor {
+    width: 94vw;
+    border: 1px solid gray;
+    height: 75vh;
+    padding: 1%;
+    margin: 1%;
+    position: relative;
+}
+.estatica {
+    position: static;
+    width: 40%;
+    border: 1px solid red;
+    text-align: center;
+    font-family: Georgia, serif;
+    color: red;
+}
+.relativa {
+    position: relative;
+    left: 50px;
+    top:20px;
+    border: 1px solid green;
+    width: 40%;
+    text-align: center;
+    color: green;
+    font-family: Georgia, serif;
+    margin-bottom: 3%;
+}
+.relativa p:nth-child(3), .relativa p:nth-child(4) {
+    display: inline-block;
+    margin-top: 0%;
+}
+.relativa p:nth-child(3)::before, .relativa p:nth-child(4)::before {
+    content: " -";
+} 
+.absoluta {
+    position: absolute;
+    left: 20px;
+    border: 1px solid blue;
+    text-align: center;
+    padding: 0.5%;
+    font-family: Georgia, serif;
+    color: blue;
+}
+.pegajosa {
+    width: 20%;
+    position: sticky;
+    bottom: 0px;
+    border: 1px solid palevioletred;
+    text-align: center;
+    font-family: Georgia, serif;
+    color:palevioletred;
+}
